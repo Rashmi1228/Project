@@ -11,7 +11,8 @@ namespace Project.DataAccess
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
-        public DbSet<C1> C1 { get; set; }
+        public DbSet<Login> Login{ get; set; }
+        public DbSet<Company> Company { get; set; }
 
 
     }
