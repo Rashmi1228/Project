@@ -9,7 +9,7 @@ namespace Project.Models
     public class EF_Models
     {
         //API 1
-        public class login
+        public class Login
         {
             [Key]
             public string UserID { get; set; }
