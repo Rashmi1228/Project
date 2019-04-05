@@ -45,6 +45,8 @@ namespace Project.Controllers
             Calls the IEX reference API to get the list of symbols.
             Returns a list of the companies whose information is available. 
         */
+        
+      /*
         public List<C1> GetSymbols()
         {
             string IEXTrading_API_PATH = BASE_URL + "ref-data/symbols";
@@ -83,24 +85,25 @@ namespace Project.Controllers
             return View(companies);
         }
 
-        /*
-            The Symbols action calls the GetSymbols method that returns a list of Companies.
-            This list of Companies is passed to the Symbols View.
-        */
+        
+        //    The Symbols action calls the GetSymbols method that returns a list of Companies.
+          //  This list of Companies is passed to the Symbols View.
+        
         public IActionResult Symbols()
         {
             //Set ViewBag variable first
             ViewBag.dbSuccessComp = 0;
-            List<C1> companies = GetSymbols();
+            List<Company> companies = GetSymbols();
 
             //Save companies in TempData, so they do not have to be retrieved again
             TempData["Companies"] = JsonConvert.SerializeObject(companies);
 
             return View(companies);
         }
-        /*
-            Save the available symbols in the database
-        */
+       
+        
+        //    Save the available symbols in the database
+        
         public IActionResult PopulateSymbols()
         {
             // Retrieve the companies that were saved in the symbols method
@@ -121,7 +124,7 @@ namespace Project.Controllers
             return View("Index", companies);
         }
 
-
+      */
         public IActionResult Privacy()
         {
             return View();

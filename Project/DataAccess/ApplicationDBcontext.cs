@@ -13,6 +13,8 @@ namespace Project.DataAccess
 
         public DbSet<Login> Login{ get; set; }
         public DbSet<Company> Company { get; set; }
+        public DbSet<Financials> Financials { get; set; }
+        public DbSet<KeyStats> KeyStats { get; set; }
 
 
     }
